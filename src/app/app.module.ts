@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { Caixa1Component } from './caixa1/caixa1.component';
 import { HeaderComponent } from './header/header.component';
 import { FormcaixaComponent } from './formcaixa/formcaixa.component';
+import { CaixainfoComponent } from './caixainfo/caixainfo.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     Caixa1Component,
-    FormcaixaComponent
+    FormcaixaComponent,
+    CaixainfoComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
