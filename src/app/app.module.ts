@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FormcaixaComponent } from './formcaixa/formcaixa.component';
 import { CaixainfoComponent } from './caixainfo/caixainfo.component';
 import { InfoComponent } from './info/info.component';
+import { Info1Component } from './info1/info1.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InfoComponent } from './info/info.component';
     Caixa1Component,
     FormcaixaComponent,
     CaixainfoComponent,
-    InfoComponent
+    InfoComponent,
+    Info1Component
   ],
   imports: [
     BrowserModule,
