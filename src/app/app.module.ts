@@ -9,6 +9,7 @@ import { FormcaixaComponent } from './formcaixa/formcaixa.component';
 import { CaixainfoComponent } from './caixainfo/caixainfo.component';
 import { InfoComponent } from './info/info.component';
 import { Info1Component } from './info1/info1.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Info1Component } from './info1/info1.component';
     FormcaixaComponent,
     CaixainfoComponent,
     InfoComponent,
-    Info1Component
+    Info1Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
