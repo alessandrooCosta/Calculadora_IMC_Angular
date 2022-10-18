@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-formcaixa',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formcaixa.component.css']
 })
 export class FormcaixaComponent implements OnInit {
-  
+  peso = 0; 
   res = 'TESTE';
 
 
