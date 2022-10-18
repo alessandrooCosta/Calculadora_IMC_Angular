@@ -6,20 +6,17 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./formcaixa.component.css']
 })
 export class FormcaixaComponent implements OnInit {
-  peso = 0; 
-  res = 'TESTE';
-
-
-
-
-
+  genero = "";
+  peso : any; 
+  altura: any;
+  res: any;
 
 
 
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.res = this.peso;
   }
 
 }
