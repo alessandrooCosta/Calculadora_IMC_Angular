@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formcaixa.component.css']
 })
 export class FormcaixaComponent implements OnInit {
+  
+  res = 'TESTE';
+
+
+
+
+
+
+
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
