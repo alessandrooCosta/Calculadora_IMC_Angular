@@ -6,26 +6,28 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./formcaixa.component.css']
 })
 export class FormcaixaComponent implements OnInit {
+  imc : any;
   genero = "";
   peso : any; 
-  altura = 0;
-  res: any;
+  altura : any;
+  idade1 = 0;
+  idade2 = 0;
+  //res: any;
   
   calcImc(): number {
     let imc = 0;
     let gen = this.genero;
     let peso = this.peso;
     let alt = this.altura;
-    imc = peso / (alt * 2);
-    alert(imc);
-    
-    return imc;
+    this.imc = peso / (alt * 2);
+    console.log(this.imc);
+    return this.imc;
   }
 
   constructor() { }
 
   ngOnInit(): void {
-  
+   
   }
 
 }

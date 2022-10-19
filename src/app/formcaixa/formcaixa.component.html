@@ -29,7 +29,7 @@
         <div class="col-6">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="idade"
-                    value="idade1" [(ngModel)]="altura"><strong>
+                    value="idade1" [(ngModel)]="idade1"><strong>
                     <label class="form-check-label" for="flexRadioDefault1">
                         Adulto: idade <= 65 anos </label> </strong>
             </div>
@@ -37,7 +37,7 @@
         <div class="col-6">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="idade"
-                    value="idade2" [(ngModel)]="altura"><strong>
+                    value="idade2" [(ngModel)]="idade2"><strong>
                     <label class="form-check-label" for="flexRadioDefault1">
                         Idoso: idade > 65 anos
                     </label></strong>
@@ -46,13 +46,13 @@
     </div>
     <div class="row my-4">
         <div class="form-group col-12 mt-4 text-center">
-            <input type="button" value="Calcular" class="btn btn-primary" onclick="calcular()">
+            <input type="button" value="Calcular" class="btn btn-primary" (click)="calcImc()">
             <input type="reset" value="Limpar" class="btn btn-danger">
         </div>
     </div>
 </form>
 <div class="container color-black">
     <div class="card w-100 my-5">
-        <div id="res">{{ res }}</div>
+        <div id="res">{{ imc }}</div>
     </div>
 </div>
