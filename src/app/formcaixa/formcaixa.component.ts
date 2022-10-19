@@ -9,7 +9,7 @@ export class FormcaixaComponent implements OnInit {
   genero = "";
   peso : any; 
   altura: any;
-  res: any;
+  res: number = 0;
 
 
 
