@@ -20,7 +20,6 @@ export class FormcaixaComponent implements OnInit {
     let peso = this.peso;
     let alt = this.altura;
     this.imc = peso / (alt * 2);
-    console.log(this.imc);
     return this.imc;
   }
 
