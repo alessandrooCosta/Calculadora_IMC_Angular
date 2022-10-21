@@ -10,16 +10,19 @@ export class FormcaixaComponent implements OnInit {
   genero = "";
   peso : any; 
   altura : any;
-  idade1 = 0;
-  idade2 = 0;
-  //res: any;
+  idade = "";
+  res = "";
   
-  calcImc(): number {
+  calcImc(): string | number {
     let imc = 0;
+    let res = "IMC: ";
     let gen = this.genero;
     let peso = this.peso;
     let alt = this.altura;
-    this.imc = peso / (alt * 2);
+    let id = this.idade;
+    let calc = peso / (alt * 2);
+    this.res = res;
+    this.imc = calc.toFixed(1);
     return this.imc;
   }
 
