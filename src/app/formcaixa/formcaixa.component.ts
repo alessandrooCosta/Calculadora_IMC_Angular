@@ -23,6 +23,11 @@ export class FormcaixaComponent implements OnInit {
     let calc = peso / (alt * 2);
     this.res = res;
     this.imc = calc.toFixed(1);
+    if(this.imc < 30.0){
+      console.log('teste');
+    }else{
+      
+    }
     return this.imc;
   }
 
