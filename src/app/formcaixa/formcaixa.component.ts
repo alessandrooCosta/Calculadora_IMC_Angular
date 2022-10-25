@@ -12,7 +12,7 @@ export class FormcaixaComponent implements OnInit {
   altura : any;
   idade = "";
   res = "";
-  textRed = false
+  textRed = false;
   
   calcImc(): string | number {
     let imc = 0;
@@ -27,7 +27,7 @@ export class FormcaixaComponent implements OnInit {
     if(this.imc < 30.0){
       this.textRed = true;
     }else{
-
+      this.textRed = false;
     }
     return this.imc;
   }
