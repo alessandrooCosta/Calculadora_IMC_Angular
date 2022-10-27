@@ -36,7 +36,7 @@ export class FormcaixaComponent implements OnInit {
 
 
   get(): "#87CEEB" | "#3CB371" | "#FFFF00" | "#FFA500" | "#FF4500" | "#FF0000" | any{
-    if (this.imc < 30) {
+    if (this.imc < 18.5) {
       return '#87CEEB'
     } else if (this.imc == 18.5 || this.imc < 24.9) {
       return '#3CB371'
