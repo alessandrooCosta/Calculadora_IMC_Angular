@@ -28,13 +28,8 @@ export class FormcaixaComponent implements OnInit {
     this.imc = calc.toFixed(1);
     if(this.imc < 30.0){
       this.textRed = true;
-      let textres = this.textres;
-      this.textres = this.textRed;
-
     }else{
-      this.textBlue = true;
-      let textres = this.textres;
-      this.textres = this.textBlue;
+      this.textBlue = true
     }
     return this.imc;
   }
