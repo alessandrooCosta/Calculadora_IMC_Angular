@@ -53,6 +53,6 @@
 </form>
 <div class="container color-black">
     <div class="card w-100 my-5">
-        <div class="res" [class.res]="textres">{{ res }}{{ imc }}</div>
+        <div class="res" [ngStyle]="{ color : get() }">{{ res }}{{ imc }}</div>
     </div>
 </div>
