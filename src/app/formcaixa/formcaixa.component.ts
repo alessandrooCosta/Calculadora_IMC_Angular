@@ -12,11 +12,9 @@ export class FormcaixaComponent implements OnInit {
   altura: any;
   idade = "";
   res = "";
-  textRed = false;
-  textBlue = false;
-  textres: any;
+  textres = "";
 
-  calcImc(): string | number {
+  calcImc(): string | number | any{
     let imc = 0;
     let res = "IMC: ";
     let gen = this.genero;
@@ -26,9 +24,33 @@ export class FormcaixaComponent implements OnInit {
     let calc = peso / (alt * 2);
     this.res = res;
     this.imc = calc.toFixed(1);
+      if (this.imc < 18.5) {
+        let resultado = " Resultado: Nivel 1";
+        this.textres = resultado;
+        return  this.textres;
+      } else if (this.imc == 18.5 || this.imc < 24.9) {
+        let resultado = " Resultado: Nivel 2";
+        this.textres = resultado;
+        return  this.textres;
+      } else if (this.imc == 25.0 || this.imc < 29.9) {
+        let resultado = " Resultado: Nivel 3";
+        this.textres = resultado;
+        return  this.textres;
+      } else if (this.imc == 30.0 || this.imc < 34.9) {
+        let resultado = " Resultado: Nivel 4";
+        this.textres = resultado;
+        return  this.textres;
+      } else if (this.imc == 35.0 || this.imc < 39.9) {
+        let resultado = " Resultado: Nivel 5";
+        this.textres = resultado;
+        return  this.textres;
+      } else if (this.imc >= 40.0) {
+        let resultado = " Resultado: Nivel 1";
+        this.textres = resultado;
+        return  this.textres;
+    }
     return this.imc;
   }
-
 
   get(): "#87CEEB" | "#3CB371" | "#FFFF00" | "#FFA500" | "#FF4500" | "#FF0000" | any{
     if(this.idade == 'idade1'){
