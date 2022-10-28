@@ -25,27 +25,27 @@ export class FormcaixaComponent implements OnInit {
     this.res = res;
     this.imc = calc.toFixed(1);
       if (this.imc < 18.5) {
-        let resultado = " Resultado: Nivel 1";
+        let resultado = "Abaixo do peso";
         this.textres = resultado;
         return  this.textres;
       } else if (this.imc == 18.5 || this.imc < 24.9) {
-        let resultado = " Resultado: Nivel 2";
+        let resultado = "Peso Normal";
         this.textres = resultado;
         return  this.textres;
       } else if (this.imc == 25.0 || this.imc < 29.9) {
-        let resultado = " Resultado: Nivel 3";
+        let resultado = "Excesso de Peso";
         this.textres = resultado;
         return  this.textres;
       } else if (this.imc == 30.0 || this.imc < 34.9) {
-        let resultado = " Resultado: Nivel 4";
+        let resultado = "Obsidade de Classe 1";
         this.textres = resultado;
         return  this.textres;
       } else if (this.imc == 35.0 || this.imc < 39.9) {
-        let resultado = " Resultado: Nivel 5";
+        let resultado = "Obsidade de Classe 2";
         this.textres = resultado;
         return  this.textres;
       } else if (this.imc >= 40.0) {
-        let resultado = " Resultado: Nivel 1";
+        let resultado = "Obsidade de Classe 3";
         this.textres = resultado;
         return  this.textres;
     }
@@ -69,14 +69,11 @@ export class FormcaixaComponent implements OnInit {
       }
     }else{
       if (this.imc <= 22.0) {
-        //return "#FFFF00"
-        return "blue"
+        return "#FFFF00"
     } else if (this.imc > 22.0 && this.imc < 27.0) {
-      //return "#FFA500"
-      return "violet"
+      return "#FFA500"
     } else if (this.imc > 27.0) {
-      //return "#FF0000"
-      return "brown"
+      return "#FF0000"
     }
     }
   }
