@@ -94,6 +94,11 @@ export class FormcaixaComponent implements OnInit {
     }
   }
 
+  apagar(){
+    this.imc = "";
+    this.res = "";
+    this.textres = "";
+  }
 
   constructor() { }
 

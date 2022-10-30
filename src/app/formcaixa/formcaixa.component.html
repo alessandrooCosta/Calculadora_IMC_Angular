@@ -15,14 +15,14 @@
             <div class="form-floating">
                 <input type="number" id="peso" name="peso" class="form-control" placeholder="Peso(kg)"
                     [(ngModel)]="peso">
-                <label for="floatingInput">Peso(kg)</label>
+                <label for="floatingInput">Peso(exemplo: 50.8)</label>
             </div>
         </div>
         <div class="col-6">
             <div class="form-floating">
                 <input type="numbergit " id="altura" name="altura" class="form-control" placeholder="Altura(m)"
                     [(ngModel)]="altura">
-                <label for="floatingInput">Altura(m)</label>
+                <label for="floatingInput">Altura(exemplo: 1.60)</label>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
     <div class="row my-4">
         <div class="form-group col-12 mt-4 text-center">
             <input type="button" value="Calcular" class="btn btn-primary" (click)="calcImc()">
-            <input type="reset" value="Limpar" class="btn btn-danger">
+            <input type="reset" value="Limpar" class="btn btn-danger" (click)="apagar()">
         </div>
     </div>
 </form>
