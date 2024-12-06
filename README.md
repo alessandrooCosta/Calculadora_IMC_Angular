@@ -30,7 +30,7 @@
 
 ###
 
-<p align="left">Acesse o <a href="https://calculadoraimc500.netlify.app/">projeto online</a> ou confira o código completo no GitHub. 🚀</p>
+<p align="left">Acesse o <a href="https://calculadoraimc500.netlify.app/" target="_blank">projeto online</a> ou confira o código completo no GitHub. 🚀</p>
 
 ###
 
