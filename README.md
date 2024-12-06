@@ -38,9 +38,4 @@
 
 ###
 ![printIMC](https://github.com/user-attachments/assets/205225d9-c268-4208-83eb-e128c79a8c9a)
-
-<div align="center"> <img height="500" src=""  />
-  ![printIMC](https://github.com/user-attachments/assets/205225d9-c268-4208-83eb-e128c79a8c9a)
-</div>
-
 ###
