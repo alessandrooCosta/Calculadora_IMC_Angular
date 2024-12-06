@@ -37,8 +37,10 @@
 <h2 align="left">Capturas de tela</h2>
 
 ###
+![printIMC](https://github.com/user-attachments/assets/205225d9-c268-4208-83eb-e128c79a8c9a)
 
-<div align="center"> <img height="500" src="![printIMC](https://github.com/user-attachments/assets/448dac9d-ca83-4aaa-b420-7bcef1c904d7)"  />
+<div align="center"> <img height="500" src=""  />
+  ![printIMC](https://github.com/user-attachments/assets/205225d9-c268-4208-83eb-e128c79a8c9a)
 </div>
 
 ###
